@@ -26,12 +26,38 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: DADA_ExtendedProperty
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/ParmelaDohling579
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_0704.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: SIQA_GIT_0704Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_0704.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
+  packages:
+  - name: SIQA_GIT_0704Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -49,6 +75,8 @@ services:
   packages:
   - name: SIQA_GIT_0704Project
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -64,6 +92,8 @@ services:
 - serviceName: project.siqa_git_0704.integrations:Sum
   packages:
   - name: SIQA_GIT_0704Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -89,6 +119,8 @@ services:
   packages:
   - name: SIQA_GIT_0704Project
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -105,6 +137,8 @@ services:
   packages:
   - name: SIQA_GIT_0704Project
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -120,6 +154,8 @@ services:
 - serviceName: project.siqa_git_0704.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_0704Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
